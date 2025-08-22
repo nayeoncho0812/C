@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build with MSVC (PowerShell)",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\VsDevCmd.bat\" && cl /EHsc main.c"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$msCompile"]
+        }
+    ]
+}
